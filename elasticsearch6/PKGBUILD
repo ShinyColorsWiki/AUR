@@ -5,12 +5,13 @@
 pkgname=elasticsearch6
 _pkgname=elasticsearch
 pkgver=6.8.12
-pkgrel=3
+pkgrel=4
 pkgdesc="Distributed RESTful search engine built on top of Lucene"
 arch=('any')
 url="https://www.elastic.co/products/elasticsearch"
 license=('Apache')
 depends=('java-runtime-headless' 'systemd')
+conflicts=('elasticsearch')
 source=(
   "https://artifacts.elastic.co/downloads/$_pkgname/$_pkgname-oss-$pkgver.tar.gz"
   elasticsearch-env
