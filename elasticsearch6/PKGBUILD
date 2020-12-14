@@ -4,14 +4,15 @@
 
 pkgname=elasticsearch6
 _pkgname=elasticsearch
-pkgver=6.8.12
-pkgrel=4
+pkgver=6.8.13
+pkgrel=1
 pkgdesc="Distributed RESTful search engine built on top of Lucene"
 arch=('any')
 url="https://www.elastic.co/products/elasticsearch"
 license=('Apache')
 depends=('java-runtime-headless' 'systemd')
 conflicts=('elasticsearch')
+provides=('elasticsearch')
 source=(
   "https://artifacts.elastic.co/downloads/$_pkgname/$_pkgname-oss-$pkgver.tar.gz"
   elasticsearch-env
@@ -24,7 +25,7 @@ source=(
   elasticsearch-tmpfile.conf
   elasticsearch.default
 )
-sha256sums=('feb6c43fe66055360754597350c088025b40566cee16175b005e55660d9e62fd'
+sha256sums=('e3a41d1a58898c18e9f80d45b1bf9f413779bdda9621027a6fe87f3a0f59ec90'
             '1607adfcdefc2a55d7d4c7e8a15669da2cc8096029cce5dd5b9279d4966ceabe'
             'de3842935b6ef9cb8a05dc18334112f534dccc2292e36052df942a92de7e66db'
             '13090c1d23ae0a21bf6f0f1d1da795d38972f1674b20c3d2d32f54311aa99094'
